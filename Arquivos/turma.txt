@@ -1,0 +1,10 @@
+0001|Angela Teresa|5.0|3.5|2.8
+0002|Bruna Sivan|9.2|8.8|9.7
+0003|Bruno Teresa|5.0|3.5|8.2
+0004|Caio Andrade|9.2|3.8|5.5
+0005|Caio Barbosa|5.0|3.5|4.7
+0006|Henrique Castro|9.8|8.8|2.9
+0007|Laura Julia|8.2|1.5|6.0
+0008|Leonardo Freire|5.2|7.8|3.0
+0009|Manuela Pereira|1.0|3.5|10.0
+0010|Tais Nascimento|2.2|8.8|0.0
