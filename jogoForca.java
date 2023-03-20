@@ -6,12 +6,12 @@ public class jogoForca{
 	
 	public static void main(String[] args) {
 		
-		//armazena menu de opção
+		//armazena menu de opcao
 		Lista lista = new Lista(3);
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		//armazena numero da opção escolhida
+		//armazena numero da opcao escolhida
 		int opcao;
 		
 
@@ -20,17 +20,17 @@ public class jogoForca{
 			System.out.println("Bem vindo(a) ao jogo!");
 			System.out.println(" ");
 			System.out.println("---------------------");
-			System.out.println("Qual nível de dificuldade? ");
+			System.out.println("Qual nivel de dificuldade? ");
 			System.out.println(" ");
-			System.out.println("0 - fácil");
-			System.out.println("1 - médio");
-			System.out.println("2 - difícil");
+			System.out.println("0 - facil");
+			System.out.println("1 - medio");
+			System.out.println("2 - dificil");
 			System.out.println(" ");
-			System.out.print("Informe apenas o número: ");
+			System.out.print("Informe apenas o numero: ");
 			opcao = entrada.nextInt();
 			
 		
-		} while(opcao > 2); //não existe opção maior que 2
+		} while(opcao > 2); //nao existe opcao maior que 2
 			
 		// preenche lista
 		lista.adicionar("facil");
@@ -61,7 +61,7 @@ public class jogoForca{
 		String palavraResultado; //armazena palavra digitada no final
 		int contadorChances = 0; //conta as chances
 		int contadorAcerto = 0; //aux no controle de letras repetidas
-		int letraRepetida = 0; //verifica se tem repetição
+		int letraRepetida = 0; //verifica se tem repeticao
 		
 		Scanner entrada = new Scanner(System.in);
 		
@@ -96,7 +96,7 @@ public class jogoForca{
 		for(int i=0; i< palavra.length(); i++) {
 			if(palavra.charAt(i) == letra) { //palavra possui letra digitada
 				
-				for(int l=0; l < pilha.comprimento(); l++) { //verifica repetição
+				for(int l=0; l < pilha.comprimento(); l++) { //verifica repeticao
 					
 					if((Character)pilha.elemento(l) == letra) {
 						letraRepetida++;
@@ -107,7 +107,7 @@ public class jogoForca{
 					pilha.adicionar(letra);
 					contadorAcerto++;
 				} else {
-					System.out.println("Letra já foi citada!");
+					System.out.println("Letra ja foi citada!");
 					contadorAcerto++;
 				}
 					
@@ -116,7 +116,7 @@ public class jogoForca{
 		}
 		
 		if(contadorAcerto == 0){
-			System.out.println("Letra não encontrada");
+			System.out.println("Letra nao encontrada");
 			fila.remover();
 			System.out.println("Total de chances: " + fila.comprimento());
 		}else {
@@ -130,7 +130,7 @@ public class jogoForca{
 		
 		
 		if(palavra.equals(palavraResultado)) {
-			System.out.println("Parabéns! Você ganhou.");
+			System.out.println("Parabens! Voce ganhou.");
 		} else {
 			System.out.println("Perdeu hahaha!");
 		}
